@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#todo-container{
+    /* border:1px solid black; */
+    width:100%;
+    min-height:100vh;
+    background:linear-gradient(135deg,indigo,violet);
+    padding:10px;
+    font-family: serif;
+}
+.todo-app{
+    border:1px solid white;
+    width:50%;
+    min-width:60%;
+    background:white;
+    border-radius:15px;
+    margin:3em auto;
+    padding-bottom:2em;
+    padding-left:20px;
+}
+.todo-app h2{
+    display:flex;
+    align-items:center;
+    margin-top:25px;
+    margin-bottom:10px;
+    font-size: 16px;
+    margin-left:30px;
+}
+.todo-app h2 img{
+   width:30px;
+   margin-left:5px;
+}
+.todo-input{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-right:50px;
+    margin-left:25px;
+    padding-left:10px;
+    border-radius:30px;
+    margin-bottom:20px;
+    background:rgb(209, 207, 207);
+}
+#todo-input{
+    border:none;
+    outline:none;
+    flex:1;
+    background:transparent;
+}
+.todo-input button{
+   border:none;
+   outline:none;
+   padding:16px 50px;
+   background:rgb(236, 61, 61);
+   font-size:16px;
+   cursor:pointer;
+   border-radius:30px;
+   color:white;
+}
+.todo-input button:hover{
+    background:rgb(238, 35, 35);
+    opacity:1.1px;
+    transition:all 0.4s ease;
+}
+.todo-app ul li{
+    list-style:none;
+    font-style:normal;
+    font-size: 17px;
+    margin-left:25px;
+    font-weight:600px;
+    padding-bottom:-5px;
+    padding-left:25px;
+    margin-top:10px;
+    cursor:pointer;
+    position: relative;
+}
+.todo-app ul li::before{
+    content:"";
+    position:absolute;
+    height:13px;
+    width:13px;
+    border-radius:50%;
+    background-image:url("../images/unchecked.png");
+    background-size:cover;
+    background-position:center;
+    top:1.5px; 
+    left:3px; 
+    border:1px solid rgb(146, 141, 141);
+}
+
+.todo-app ul li.checked{
+    color:#555;
+    text-decoration:line-through;
+    background:rgb(13, 216, 98);
+    align-items: center;
+} 
+.todo-app ul li.checked::before{
+    background-image:url("../images/checked.png");
+}
+ul li span{
+    position:absolute;
+    right: 55px;
+    top:1px;
+    width:40px;
+    height:40px;
+    font:22px;
+    color:black;
+    text-align: center;
+    line-height: -5px;
+    border-radius:50px;
+}
+ul li span:hover{
+    background:#edeef0;
+    height:18px;
+    color:black;
+}
+.todo-app #todo-date{
+    display:flex;
+
+}
+.todo-app #todo-list{
+    padding-right:49px;
+    border-radius:10px;
+}
