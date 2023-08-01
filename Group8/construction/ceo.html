@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dashboard</title>
+  
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-body">
+   <header class="header">
+
+      <a href="index.html" class="logo">G8<span>Build</span></a>
+
+      <nav class="navbar">
+         <ul>
+            <li><a href="./index.html#home">home</a></li>
+            <li><a href="./index.html#about">about</a></li>
+            <li><a href="./index.html#services">services</a></li>
+            <li><a href="./index.html#projects">projects</a></li>
+            <li><a href="./index.html#pricing">pricing</a></li>
+            <li><a href="./index.html#contact">contact</a></li>
+            <li><a href="./index.html#blogs">blogs</a></li>
+            <li><a href="./ceo.html">Dashboard</a></li>
+         </ul>
+         <!-- <a href="./ceo.html">Ceo-Dashboard</a> -->
+      </nav>
+      <div class="icons dash-icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="info-btn" class="fas fa-info-circle"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="login-btn" class="fas fa-user"></div>
+      </div>
+
+      <form action="" class="search-form">
+         <input type="search" name="" placeholder="search here..." id="search-box">
+         <label for="search-box" class="fas fa-search"></label>
+      </form>
+
+      <form action="" class="login-form">
+         <h3>login form</h3>
+         <input type="email" placeholder="enter your email" class="box">
+         <input type="password" placeholder="enter your password" class="box">
+         <div class="flex">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+            <a href="#">forgot password?</a>
+         </div>
+         <input type="submit" value="login now" class="btn">
+         <p>don't have an account <a href="#">create one!</a></p>
+      </form>
+
+   </header>
+   <div id="card-container">
+         <div class="card-box">
+            <section class="card-body first-img">
+               <img src="./images/ceo-images/IMG-20230330-WA0006.jpg" width="150px" style="border-radius:10px;  border-bottom:1px solid grey;">
+            </section>
+            <section class="card-bottom first-person">
+               <h2><b>ANASTASIA</b></h2>
+            </section>
+         </div>
+         <div class="card-box">
+            <section class="card-body">
+               <img src="./images/ceo-images/IMG-20230414-WA0007~2.jpg" width="150px" style="border-radius:10px; height: 27.5em; border-bottom:1px solid grey;">
+            </section>
+            <section class="card-bottom sec-person">
+               <h2><b>REBECCA</b></h2>
+            </section>
+         </div>
+         <div class="card-box">
+            <section class="card-body">
+               <img src="./images/ceo-images/IMG-20230330-WA0008.jpg" width="200px" style="border-radius:10px;  border-bottom:1px solid grey;">
+            </section>
+            <section class="card-bottom third-person">
+               <h2><b>DOMINIC</b></h2>
+            </section>
+         </div>
+         <div class="card-box">
+            <section class="card-body">
+               <img src="./images/ceo-images/fire.png" width="200px" style="border-radius:10px; border-bottom:1px solid grey;">
+            </section>
+            <section class="card-bottom forth-person">
+               <h2><b>FIRE</b></h2>
+            </section>
+         </div>
+   </div>
+
+   <!--Page bottom-->
+   <section class="page-bottom">
+      <div class="first">
+          <img src="./images/tropite.png">
+          <div class="first-item">
+              <p>Subscribe for our latest articles <br>and news resources</p>
+              <div class="first-icons" id="contact">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="bottom-links">
+          <h3>Links</h3>
+      </div>
+      <div class="bottom-a">
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+      </div>
+      <div class="bottom-contact">
+          <h3>Contacts</h3>
+      </div>
+      <div class="getUs">
+          <a href="#">0209517403</a>
+          <a href="#">info@forecast5.com</a>
+      </div>
+      <div class="icons" id="contact">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+
+  </section>
+
+  <div class="copyright">
+      <p>© All Copyright 2023 by Forcast5</p>
+  </div>
+   
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+   <!-- custom js file link  -->
+   <script src="js/script.js"></script>
+
+   <script>
+
+      lightGallery(document.querySelector('.projects .box-container'));
+
+   </script>
+</body>
+
+</html>
